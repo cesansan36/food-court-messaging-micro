@@ -11,9 +11,9 @@ public class PhoneMessage {
     private final String message;
 
     public PhoneMessage(String to, String message) {
+        validate(to, message);
         to = to.trim();
         message = message.trim();
-        validate(to, message);
 
         this.to = to;
         this.message = message;

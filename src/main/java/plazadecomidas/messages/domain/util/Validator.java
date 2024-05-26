@@ -16,7 +16,7 @@ public class Validator {
     }
 
     public static boolean isEmptyField(String field) {
-        return field == null || field.isEmpty();
+        return field == null || field.trim().isEmpty();
     }
 
     public static final String PHONE_NUMBER_VALIDATION_MESSAGE = "The number you are trying to use is not valid";

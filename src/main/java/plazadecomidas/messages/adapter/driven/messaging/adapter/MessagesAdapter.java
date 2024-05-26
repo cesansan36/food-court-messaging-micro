@@ -20,11 +20,6 @@ public class MessagesAdapter implements IMessagesSecondaryPort {
     @Override
     public boolean sendMessage(PhoneMessage phoneMessage) {
 
-        // TODO: Remove this guard after development is finished
-        boolean guardToPreventSendingMessagesDuringDevelopment = true;
-        return guardToPreventSendingMessagesDuringDevelopment;
-
-        /*
         try {
             Twilio.init(sid, token);
 
@@ -39,6 +34,5 @@ public class MessagesAdapter implements IMessagesSecondaryPort {
             e.printStackTrace();
             return false;
         }
-        */
     }
 }
