@@ -1,0 +1,15 @@
+server:
+  port: 8180
+
+application:
+  security:
+    jwt:
+      secret: ${secret}
+      expiration: 604800000
+      user-generator: ${user_generator}
+
+  messaging:
+    twilio:
+      sid: ${sid}
+      token: ${token}
+      from: ${from}
